@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+   <title>Journal</title>
+<style>
+*
+{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  background-image: url(img.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: Cursive, Arial, Helvetica, sans-serif;
+  color: white;
+}
+h1
+{
+  text-align: Center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 45px;
+
+}
+
+fieldset
+{
+  padding-left: 20px;
+}
+
+button
+{
+      width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 30px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: solid #cc99ff;
+	background: transparent;
+	color: black;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+      color: white
+}
+
+span{
+	background: #cc99ff;
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+button:hover span{
+	width: 100%;
+}
+button:hover{
+	border: none;
+}
+
+
+
+</style>
+</head>
+ <body>
+ <h1>Journal</h1>
+  <form action="/action_page.php">
+  <h2>All About Today :</h2> <br> 
+       <fieldset>
+
+           <label for="birthday">Date :</label>
+           <input type="date" id="birthday" name="birthday"><br><br>
+                
+           <label for="appt">What time is it now ? :</label>
+           <input type="time" id="appt" name="appt"><br><br>   
+
+           Is it any special day today ? : <textarea rows = 2 cols = 20 name="txt"></textarea>
+     
+       </fieldset><br><br>
+
+   <h2>My Daily Rules :</h2><br>
+       <fieldset>
+        <h3>
+          <br>Are You Motivated ? : <input type="radio" name="r1" > Yes <input type="radio" name="r1" >No<br>
+          <br>Are You Punctual ? : <input type="radio" name="r2" > Yes <input type="radio" name="r2" >No<br>
+          <br>Did you study today ? : <input type="radio" name="r3" > Yes <input type="radio" name="r3" >No<br>
+          <br>Have you been Kind today ? : <input type="radio" name="r4" > Yes <input type="radio" name="r4" >No<br>
+          <br>Are you working towarts your Goal ? : <input type="radio" name="r5" > Yes <input type="radio" name="r5" >No<br>
+      </fieldset><br><br>
+
+   <h2>My Self Evaluation :</h2><br>
+       <fieldset>
+         <h3>
+          <br> 
+          <input type="checkbox" name="ch1"> Waking Up at 6 <br>
+          <input type="checkbox" name="ch2"> Exercise <br>
+          <input type="checkbox" name="ch3"> Studying <br>
+          <input type="checkbox" name="ch4"> Drinking More water <br>
+          <input type="checkbox" name="ch5"> Maintaining The Screen timing <br>
+          <input type="checkbox" name="ch6"> Reading <br>
+          <input type="checkbox" name="ch7"> Going To Bed Early <br>
+
+         </h3>
+        </fieldset><br><br>
+
+<h2>How was my Day :</h2><br>
+       <fieldset>
+         <h3>
+          <br> 
+          <input type="checkbox" name="ch1"> Amazing <br>
+          <input type="checkbox" name="ch2"> Very Good <br>
+          <input type="checkbox" name="ch3"> good <br>
+          <input type="checkbox" name="ch4"> Just A Normal Day <br>
+          <input type="checkbox" name="ch5"> Not Bad <br>
+          <input type="checkbox" name="ch6"> Very Bad <br>
+
+          Wannna Say Anything About Today ? : <textarea rows = 2 cols = 20 name="txt"></textarea>
+         <br><br>
+
+         </h3>
+        </fieldset><br><br>
+
+
+<h2>My Behavior :</h2><br>
+       <fieldset>
+         <h3>
+          <br> 
+          <input type="checkbox" name="ch1"> Kind<br>
+          <input type="checkbox" name="ch2"> I was Good <br>
+          <input type="checkbox" name="ch3"> Finished My Work<br>
+          <input type="checkbox" name="ch4"> Attentive In Class<br>
+          <input type="checkbox" name="ch5"> I Was Productive<br>
+          <input type="checkbox" name="ch6"> Helping Mum<br>
+          <input type="checkbox" name="ch7"> Cleaning My Place <br>
+
+         </h3>
+        </fieldset><br><br>
+
+<h2>Umm Just Random :</h2><br>
+       <fieldset>
+         <h3>
+           Wanna Upload Daily Pic Of Yourself ? : <input type="file" name="f1" accept="*.jpg">
+           </input class="button" type="button" value="Submit"><br><br></b>
+        </h3>
+      </fieldset>
+
+  <div class="button" align="center">
+     <button type="button" onclick="alert('If You Want To Save It Then Take A Screen Shott XD')"><span></span>Submit</button>
+  </div>
+
+</form>
+
+</body>
+</html>
